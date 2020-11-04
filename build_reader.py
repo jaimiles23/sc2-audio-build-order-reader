@@ -10,8 +10,7 @@ def perform_action(printed_statement, spoken_text):
     call(["python3", "tts.py", spoken_text])
 
 def read(build_file, shorthand, supply, delay):
-    print("Press enter to begin: ", end = '')
-    input()
+    input("Press enter to begin: ")
 
     with open('builds/' + build_file, 'r') as build_order:
         print("Build start.")
